@@ -1,0 +1,80 @@
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+/* HEADER COM FLEXBOX */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    margin-left: px;
+    text-decoration: none;
+}
+
+/* GRID NO CONTEÚDO */
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background: lightgray;
+    padding: 40px;
+    text-align: center;
+}
+
+/* BOTÃO COM ANIMAÇÃO */
+
+.botao-area{
+    text-align: center;
+    margin: 30px;
+}
+
+.botao{
+    padding: 15px 30px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 00.3s;
+}
+
+.botao:hover{
+    background-color: rgb(87, 87, 87);
+    transform: scale(1.1);
+}
+
+/* FOOTER COM FLEXBOX */
+
+footer{
+    display: flex;
+    justify-content: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+    }
+
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+}
